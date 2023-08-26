@@ -1,0 +1,112 @@
+/*
+package example.application;
+
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
+import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import java.util.ArrayList;
+import java.util.List;
+
+
+public class TipsFragment extends Fragment {
+
+    private RecyclerView recyclerView;
+    private TipsAdapter adapter;
+
+    private static class Tip {
+        private String text;
+        private int imageResId;
+
+        public Tip(String text, int imageResId) {
+            this.text = text;
+            this.imageResId = imageResId;
+        }
+
+        public String getText() {
+            return text;
+        }
+
+        public int getImageResId() {
+            return imageResId;
+        }
+    }
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        View rootView = inflater.inflate(R.layout.fragment_tips, container, false);
+        getActivity().setTitle("Tips");
+
+        recyclerView = rootView.findViewById(R.id.recyclerView);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+
+        adapter = new TipsAdapter();
+        recyclerView.setAdapter(adapter);
+
+        // Create a list of tips
+        List<Tip> tipsList = new ArrayList<>();
+        tipsList.add(new Tip("Tip 1", R.drawable.tip1_image));
+        tipsList.add(new Tip("Tip 2", R.drawable.tip2_image));
+        tipsList.add(new Tip("Tip 3", R.drawable.tip3_image));
+
+        // Create and set the adapter with the list of tips
+        TipsAdapter adapter = new TipsAdapter(tipsList);
+        recyclerView.setAdapter(adapter);
+
+        return rootView;
+        }
+
+        private static class TipsAdapter extends RecyclerView.Adapter<TipsAdapter.TipViewHolder> {
+
+            private List<String> tipsList = new ArrayList<>();
+
+            public void addTip(String tip) {
+                tipsList.add(tip);
+                notifyDataSetChanged();
+            }
+
+            @Override
+            public TipViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+                View itemView = LayoutInflater.from(parent.getContext())
+                        .inflate(R.layout.list_tips, parent, false);
+                return new TipViewHolder(itemView);
+            }
+
+            @Override
+            public void onBindViewHolder(@NonNull TipViewHolder holder, int position) {
+                Tip tip = tipsList.get(position);
+
+                // Update the image
+                holder.tipImage.setImageResource(tip.getImageResId());
+
+                // Update the text
+                holder.tipText.setText(tip.getText());
+
+            @Override
+            public int getItemCount() {
+                return tipsList.size();
+            }
+
+            public static class TipViewHolder extends RecyclerView.ViewHolder {
+                ImageView tipImageView;
+                TextView tipTextView;
+
+                public TipViewHolder(View itemView) {
+                    super(itemView);
+                    tipImageView = itemView.findViewById(R.id.tipImage);
+                    tipTextView = itemView.findViewById(R.id.tipText);
+                }
+            }
+        }
+    }
+}
+
+*/
