@@ -1,0 +1,400 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap');
+/* Simple browser reset */
+* {
+  box-sizing: border-box;
+}
+
+html,
+header {
+  background: #222;
+  color: #fff;
+  padding: 10px 30px;
+}
+
+body {
+  background-color: #53bea4;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+  background:#222;
+  padding: 40px;
+  text-align: center;
+  color: #d8d8d8;
+}
+
+/* Icon */
+#icon {
+  display: inline-block;
+  color: #fff;
+  width: 49%;
+  font-family: "Playfair", serif;
+  font-size: 1.5vw;
+}
+
+#icon img {
+  width: 50px;
+  border-radius: 3px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+/* nav bar  */
+nav ul li {
+  display: inline-block;
+}
+
+nav {
+  width: 50%;
+  display: inline-block;
+  text-align: right;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+}
+
+nav ul li a {
+  color:#fff;
+  text-decoration: none;
+  display: block;
+  padding: 10px 15px;
+  border-radius: 3px;
+  transition: 0.3s ease all;
+}
+
+nav ul li a:hover {
+  background: #444;
+  color: #d4c295;
+}
+
+
+.nav-link-button {
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  font: inherit;
+  margin: 0;
+  padding: 10px 15px;
+  border-radius: 3px;
+}
+
+.nav-link-button:hover {
+  background: #444;
+  color: #d4c295;
+}
+
+
+/* Hero Styling */
+.hero {
+  min-height: 30vw;
+  max-height: 40vw;
+  background-image: url("../public/hero.jpg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size:contain;
+  position: relative;
+  text-align: center;
+  height:100vh;
+}
+
+.hero__title {
+  font-size: 9vw;
+  margin: 0;
+  font-family: "Playfair", serif;
+  color: #4e2618;
+}
+
+.hero__subtitle {
+  font-size: 1.5vw;
+  font-family: "Merriweather", serif;
+  font-style: italic;
+  font-variant-position: sub;
+  color: #4e2618;
+  padding-left: 10vw;
+}
+
+
+.hero__content {
+  position: relative;
+  top: 10vw;
+}
+
+.hero__content a {
+  display: inline-block;
+  background-color: #4e2618;
+  color: #d4c295;
+  border: 0.2vw solid #4e2618;;
+  border-radius: 1vw;
+  padding: 1vw 2vw;
+  margin-right: 1.5vw;
+  text-decoration: none;
+  font-size: 1vw;
+  transition: transform 1s;
+  font-family:'Times New Roman', Times, serif;
+  margin-left: 15vw;
+}
+
+.hero__content a:hover {
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+
+
+/* Basic site section */
+.features {
+  padding-bottom: 3vw;
+  padding-top: 1vw;
+  width: 100%;
+  max-width: 60vw;
+  margin: 0 auto;
+  color:#222;
+}
+
+.features_header {
+  font-size: 3vw;
+  margin: 0;
+  font-family: "Playfair", serif;
+  color: #4e2618;
+  position: relative;
+  top: 10%;
+  
+}
+
+.features_header h2 {
+  font-size: 30px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #885f43;
+}
+
+.features_box-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.features_box {
+  text-align: center;
+  background-color: #fff;
+  border-radius: 0.5vw;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.features__box img {
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size:contain;
+  position:fixed;
+}
+
+.features__box h5 {
+  font-size: 20px;
+  color: #999;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+/* Page styling */
+.page {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #222;
+}
+
+.page_title {
+  font-size: 4vw;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin: 0;
+  font-family: "Playfair", serif;
+  padding: 1vw;
+  text-align: center;
+}
+
+.page_subtitle {
+  font-size: 1.5vw;
+  font-family: "Merriweather", serif;
+  font-style: italic;
+  font-variant-position: sub;
+  color: #4e2618;
+  text-align: center;
+  
+}
+
+.page_title h2{
+  font-size: 3vw;
+  padding-left:8vw;
+  padding-right:8vw;
+  color: #4e2618;
+}
+
+.page_title h3{
+  font-size: 2vw;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin: 0;
+  font-family: "Playfair", serif;
+  padding: 1vw;
+  width:30vw;
+  position: relative;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  padding-left: 6vw;
+  padding-right: 6vw;
+  padding-bottom: 1vw;
+}
+
+.login-container {
+  display:inline-block;
+  padding-left: 8vw;
+  padding-right: 6vw;
+
+}
+
+.word-input {
+  min-width: 2vw;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border:none;
+  width:max-content;
+}
+
+.number-input {
+  min-width: 5vw;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 300px;
+}
+
+.input_labels {
+  font-size: 16px;
+  padding-right: 0.5vw;
+  padding-left: 2vw;
+  text-justify: left;
+}
+
+.ag-theme-cinematica {
+  --ag-odd-row-background-color: #d4c295;
+  position:relative;
+  padding-left: 5vw;
+  padding-right: 10vw;
+  max-height: 26.3vw;
+}
+
+.ag-theme-cinematica .ag-header {
+  display: flex;
+  align-items: center;
+}
+
+.ag-theme-cinematica .ag-cell {
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+.ag-theme-people {
+  background-color: #d4c295;
+  color-scheme: #d4c295;
+  position:relative;
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+
+.ag-theme-people .ag-cell{
+  background-color: #d4c295;
+  text-transform: capitalize;
+
+}
+
+.ag-theme-people .ag-header {
+  background-color: #d4c295;
+}
+
+
+/* Style the tab buttons */
+
+.tablink {
+  color: #4e2618;
+  float: left;
+  cursor: pointer;
+  border-top: #222;
+  border-left: #222;
+  border-right: #222;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 33%;
+}
+
+/* Change background color of buttons on hover */
+.tablink:hover {
+  text-decoration: underline;
+}
+
+/* Set default styles for tab content */
+.tabcontent {
+  color: #222;
+  width:99%;
+  display: none;
+  padding: 1vw;
+  padding-top: 4vw;
+  text-align: left;
+  border-radius: 0.5vw; 
+}
+
+/* Style each tab content individually */
+#Details {background-color:#d4c295;}
+#Ratings {background-color:#d4c295;}
+#People {background-color:#d4c295;}
+
+#line {
+  width: 1px;
+  height: 20vw;
+  margin: 0 5vw;
+  background-color: #ddd;
+}
+
+#submit-button {    
+  display: inline-block;
+  background-color: #4e2618;
+  color: #d4c295;
+  border: 0.2vw solid #4e2618;;
+  border-radius: 1vw;
+  padding: 0.25vw 2vw;
+  margin-right: 1.5vw;
+  text-decoration: none;
+  font-size: 1vw;
+  transition: transform 1s;
+  font-family:'Times New Roman', Times, serif;
+}
+
+
+
+/* Responsive Columns */
+@media (max-width: 700px){
+  .features__box-wrapper{
+    flex-wrap: wrap;
+  }
+  .features__box {
+    flex: 1 100%;
+  }
+}
