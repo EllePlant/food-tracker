@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+            android:id="@+id/bot_nav_home"
+            android:title="Home"
+            android:icon="@drawable/home_vector"/>
+
+    <item
+            android:id="@+id/bot_nav_pantry"
+            android:title="Pantry"
+            android:icon="@drawable/pantry_vector"/>
+
+    <item
+            android:id="@+id/bot_nav_tips"
+            android:icon="@drawable/tips_vector"
+            android:title="Tips"/>
+    <item
+            android:id="@+id/bot_nav_profile"
+            android:title="Profile"
+            android:icon="@drawable/profile_vector"/>
+
+</menu>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:showIn = "navigation_view">
+
+    <group
+            android:checkableBehavior="single">
+
+        <item
+                android:id="@+id/side_nav_recipe"
+                android:title="Recipe"
+                android:icon="@drawable/recipe_vector"/>
+
+        <item
+                android:id="@+id/side_nav_settings"
+                android:icon="@drawable/settings_vector"
+                android:title="Settings"/>
+
+        <item
+                android:id="@+id/side_nav_help"
+                android:icon="@drawable/help_vector"
+                android:title="Help"/>
+
+        <item
+                android:id="@+id/side_nav_about"
+                android:icon="@drawable/about_vector"
+                android:title="About Us"/>
+    </group>
+    <item
+            android:title="">
+
+        <menu>
+            <item
+                    android:id="@+id/side_nav_logout"
+                    android:icon="@drawable/logout_vector"
+                    android:title="Logout"/>
+        </menu>
+
+    </item>
+
+</menu>
